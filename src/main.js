@@ -3,7 +3,8 @@ const dayEl = document.querySelector(".day");
 
 let date = new Date();
 
-timeEl.textContent = date.toLocaleTimeString("en-US");
+// timeEl.textContent = date.toLocaleTimeString("en-US");
+timeEl.textContent = date.getUTCMilliseconds();
 
 // DAY NAME
 let dayName = date.getDay();
@@ -35,4 +36,6 @@ const week = [
   "Saturday",
 ];
 
-dayEl.textContent = `${week[dayName]}, ${months[month]} ${year}`;
+// dayEl.textContent = `${week[dayName]}, ${months[month]} ${year}`;
+dayEl.textContent = `${week[dayName]}`;
+

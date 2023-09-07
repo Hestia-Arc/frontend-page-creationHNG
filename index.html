@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Page Creation</title>
-    <link rel="stylesheet" href="./src/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
     <!-- Develop & host using HTML and CSS -->
     <!-- Showcase specific personal and real-time data attributes -->
     <!-- Each element should have a specified data-testid attribute-->
-    
+
     <!-- Requirements -->
     <!-- 
         slack name 
@@ -21,34 +21,47 @@
     
     -->
 
+    <div class="container">
+      <div class="img-container">
+        <img
+          class="img-El"
+          src="./src/images/dev-photo.jpg"
+          alt="Afolabi Esther"
+          data-testid="slackDisplayImage"
+        />
+      </div>
 
+      <div class="content-header">
+        <h2 class="name" data-testid="slackUserName">Afolabi Esther</h2>
+        <p class="track" data-testid="myTrack">Frontend Track</p>
+      </div>
 
-    
-    
-    <h1 data-testid="slackUserName" >Afolabi Esther</h1>
+      <div class="content-body">
+        <br>
+        <div>
+          <h6>Current day of the week</h6>
+          <span data-testid="currentDayOfTheWeek" class="day"></span>
+        </div>
+        <br>
+        <div>
+          <h6>Current UTC time</h6>
+          <span data-testid="currentUTCTime" class="time"></span>
+        </div>
 
-    <br>
-    <img src="" alt="Afolabi Esther" data-testid="slackDisplayImage">
-
-    <br>
-    <div>Current day of the week</div>
-    <div  data-testid="currentDayOfTheWeek" class="day"> </div>
-    
-    <br>
-    <div>Current UTC time</div>
-    <div  data-testid="currentUTCTime" class="time" ></div>
-
-    <br>
-    <div data-testid="myTrack">My Track: Frontend </div>
-
-    <br>
-    <a href="https://github.com/Hestia-Arc/frontend-page-creationHNG.git" target="_blank" data-testid="githubURL">
-        <span>Github project URL</span>
-    </a>
-    
+        <br />
+        <a
+          href="https://github.com/Hestia-Arc/frontend-page-creationHNG.git"
+          target="_blank"
+          data-testid="githubURL"
+          class="repo-link"
+        >
+          <button>Link to the repository</button>
+        </a>
+      </div>
+    </div>
 
     <script src="./src/main.js"></script>
     <!-- Host URL (vercel) -->
     <!-- https://frontend-page-creation-hng.vercel.app/ -->
-</body>
+  </body>
 </html>
